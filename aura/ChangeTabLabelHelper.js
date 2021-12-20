@@ -71,11 +71,11 @@
         if (label != null)
         {
             let workspaceAPI = component.find("workspace");
-            workspaceAPI.getFocusedTabInfo().then(function(response) {
-                let focusedTabId = response.tabId;
+            workspaceAPI.getEnclosingTabId().then(function(response) {
+                var currentTabId = response;
                 // This sets the actual tab label with the result
                 workspaceAPI.setTabLabel({
-                    tabId: focusedTabId,
+                    tabId: currentTabId,
                     label: label
                 });
             })
