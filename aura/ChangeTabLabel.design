@@ -1,4 +1,4 @@
 <design:component>
 	<design:attribute name="objectField" label="Field Name" description="Name of the field you want to use for setting the Tab label - make sure this is the 'Name' field and not the 'Label'. Must be a field on the current record." />
-	<design:attribute name="useContact" label="Use Contact or Account as priority" description="Checking this will prioritize the associated Contact or Account as the label over the field value entered above" />
+	<design:attribute name="useContact" label="Use Contact or Account as priority" description="Checking this will prioritize the associated Contact or Account as the label over the field value entered above. Supports Case, ChatTranscript and MessagingSession objects" />
 </design:component>
