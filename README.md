@@ -1,5 +1,6 @@
 # ChangeTabLabelComponent
-A Lightning Component for Salesforce that will update the workspace tab label for Cases, Chats, Messaging Sessions and Work Orders with the related contact or account's name
+A Lightning Component for Salesforce that will update the workspace tab label - this works for all objects by using a field for that object. 
 
+For Cases, Chats, Messaging Sessions and Work Orders you can also choose to use the associated Contact or Account Name instead by selecting the relevant checkbox
 
-You can add further objects by allowinge that object in the design file, and supporting the lookup to contact/account (if you want to use these values) in the ChangeTabLabelController Apex class.
+You can add further support for the Contact or Account to other objects by adding the lookup to contact/account in the ChangeTabLabelController Apex class.
